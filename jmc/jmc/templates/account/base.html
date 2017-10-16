@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <head>
+    {% load static %}
+ 		<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Chamunda Nagar Pachahi</title>
+    <meta name="description" content="temple">
+    <meta name="keywords" content="temple">
+    
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans|Raleway" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/flexslider.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    	{% block head %}{% endblock head %}
+    </head>
+
+    <body>
+    {% block content %}{% endblock content %}
+    </body>
+</html>

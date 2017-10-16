@@ -1,0 +1,23 @@
+{% extends "account/base.html" %}
+
+{% block head %}
+	{% load static %}
+{% endblock head %}
+{% block content %}
+       {% include "account/header.html" %}
+
+<div class="row">  
+	<div class="container col-sm-10">
+	  <div class="article-dtl-img-div col-sm-10">
+		<img height="200px" width="500px" src="{{ article.cover_image.image_path.url }}"/>
+	  </div>
+	  <div class="article-detail-div col-sm-12">
+			    {{ article.body }}
+	 </div>
+	</div>
+</div>
+   	<!-- </div> -->
+
+   <script src="{% static 'js/jquery.min.js' %}"></script>
+   <script src="{% static 'js/bootstrap.min.js' %}"></script>
+{% endblock content %}

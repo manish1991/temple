@@ -1,0 +1,19 @@
+{% extends "account/base.html" %}
+
+{% block head %}
+	{% load static %}
+{% endblock head %}
+{% block content %}
+       {% include "account/header.html" %}
+	<div class="col-sm-12">
+	{% for image in image_list %}
+		<div class="col-sm-4">
+			<div class="image-container">
+					    <img height="200px" width="390px" src="{{ image.image_path.url }}" alt="Avathar"/>
+			</div>
+		</div>
+	{% endfor %}
+	</div>
+   <script src="{% static 'js/jquery.min.js' %}"></script>
+   <script src="{% static 'js/bootstrap.min.js' %}"></script>
+{% endblock content %}

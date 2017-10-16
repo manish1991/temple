@@ -1,0 +1,56 @@
+* {
+    padding: 0px;
+    margin: 0px
+}
+
+.container{
+		   /*background-color:#F0FFFF;*/
+		    
+		}
+
+.user-img-div{
+		   height:180px;
+  		   background-color:#B0E0E6;
+}
+
+.user-detail-div{	
+		   height:90px;
+		   background-color:#F0FFFF;
+}
+
+.article-container{
+			height:500px;
+			width:100%;
+			background-color:#e9eaed;
+}
+
+.article-list{
+	border: 5px solid #ddd;
+
+}
+
+.article-dtl-img-div{
+	margin-left: 20%;
+}
+
+.article-detail-div{
+	margin-top: 3%;
+	margin-left: 8%;
+	text-indent: 0px; 
+	padding: 0px; 
+	background: transparent; 
+	border-style: none; 
+	float: none; 
+	line-height: normal; 
+	font-size: 18px; 
+	vertical-align: baseline; 
+	display: inline-block; 
+	/*width: 112px; 
+	height: 20px;*/
+}
+
+.image-container{
+	margin: 10px;
+}
+
+

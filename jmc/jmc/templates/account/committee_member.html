@@ -1,0 +1,31 @@
+{% extends "account/base.html" %}
+
+{% block head %}
+	{% load static %}
+{% endblock head %}
+{% block content %}
+       {% include "account/header.html" %}
+
+<div class="row">  
+	<div class="container col-sm-12">
+	  	{% for user_profile in user_profile_list %}	
+		<div class="col-sm-2">
+			<div class="user-img-div col-sm-12">
+						<img height="170px" width="170px" src="{{ user_profile.image.url }}" alt="Avathar"/>
+			</div>
+			<div class="user-detail-div col-sm-12">
+					    <h5>{{user_profile.user.firstname}}</h5>
+					    <h6>{{user_profile.user.email}}</h6>
+					    <h6>{{user_profile.whatsapp_no}}</h6>
+					    <h6><a href={{user_profile.fb_id}}>{{user_profile.user.username}} fb profile</a></h6>
+					    
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+   	<!-- </div> -->
+
+   <script src="{% static 'js/jquery.min.js' %}"></script>
+   <script src="{% static 'js/bootstrap.min.js' %}"></script>
+{% endblock content %}
